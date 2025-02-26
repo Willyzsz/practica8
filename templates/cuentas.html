@@ -1,0 +1,24 @@
+<table class="table table-sm">
+    <thead class="table-active">
+        <tr>
+            <th>Id Cuenta</th>
+            <th>Monto</th>
+            <th>Fecha y Hora</th>
+            <th>Id Cliente</th>
+            <th>Nombre Cliente</th>
+            <th>Numero</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cuenta in cuentas %}
+        <tr>
+            <td>{{ cuenta.idCuenta }}</td>
+            <td>{{ cuenta.monto }}</td>
+            <td>{{ cuenta.fechaHora }}</td>
+            <td>{{ cuenta.idCliente }}</td>
+            <td>{{ cuenta.nombreCliente }}</td>
+            <td>{{ cuenta.numero }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

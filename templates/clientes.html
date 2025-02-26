@@ -1,0 +1,18 @@
+<table class="table table-sm">
+    <thead class="table-active">
+        <tr>
+            <th>Id Cliente</th>
+            <th>Nombre Cliente</th>
+            <th>Numero</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cliente in clientes %}
+        <tr>
+            <td>{{ cliente.idCliente }}</td>
+            <td>{{ cliente.nombreCliente }}</td>
+            <td>{{ cliente.numero }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
